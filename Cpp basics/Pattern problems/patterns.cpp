@@ -1,6 +1,21 @@
 #include <iostream>
 using namespace std;
 
+//number triangle
+void nNumberTriangle(int n) {
+
+    int num = 1;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout<<num<< " ";
+            num += 1;
+        }
+        cout<<endl;
+
+    }
+
+}
+
 //number crown
 void numberCrown(int n) {
     
