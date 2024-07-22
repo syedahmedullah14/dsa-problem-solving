@@ -43,3 +43,23 @@ bool palindrome(int n)
         return false;
     }
 }
+
+//armstrong
+bool checkArmstrong(int n){
+
+	int dup = n;
+	int sum = 0;
+	int digit = (int)(log10(n) + 1);
+	while(n>0){
+		int ld = n%10;
+		n = n/10;
+		sum += pow(ld, digit);
+	}
+	if (sum==dup){
+		return true;
+	} 
+	else{
+	 return false;
+	 }
+}
+
