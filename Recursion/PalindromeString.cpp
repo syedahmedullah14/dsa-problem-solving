@@ -1,3 +1,5 @@
+#include<iostream>
+
 bool print(int i, string &s){
   
    if(i>=s.size() /2) return true;
