@@ -7,7 +7,8 @@ int main(){
     cin>>s;
 
     //precompute
-    int hash[256] = {0}; //for all ASCII characters 
+    int hash[256] = {0}; //for all ASCII characters
+    
     for(int i = 0; i<n; i++){
         hash[s[i]]++;
         //hash[s[i]-'a'] // to compute only lower character
